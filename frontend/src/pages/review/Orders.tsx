@@ -1,7 +1,7 @@
 import React from 'react'
 import NaLink from 'react-router-dom'
-import Header1 from "../components/Header";
-import Navbar from "../components/Navbar";
+import Header1 from "../../components/Header";
+import Navbar from "../../components/Navbar";
 import { Input } from 'antd';
 import {  Layout } from 'antd';
 

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Header1 from "../components/Header";
-import Navbar from "../components/Navbar";
-import { CreateReview, GetRating } from "../services/https";
+import Header1 from "../../../components/Header";
+import Navbar from "../../../components/Navbar";
+import { CreateReview, GetRating } from "../../../services/https";
 import { useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import { Layout } from "antd";
 import { Input } from "antd";
 import { Rate } from "antd";
 import {  Form } from "antd";
-import { ReviewInterface } from "../interfaces/lReview";
+import { ReviewInterface } from "../../../interfaces/lReview";
 
 
 
@@ -70,7 +70,7 @@ function Createreview() {
                   />
                 </Form.Item>
                 <Form.Item>
-                  <button>Submit</button>
+                  <button className="btn btn-primary" >Submit</button>
                 </Form.Item>
               </div>
             </Content>

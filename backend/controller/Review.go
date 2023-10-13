@@ -87,4 +87,14 @@ func UpdateReview(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"data": review})
 }
 
+func CalculateAverageRatings(c *gin.Context) {
+	var review entity.Review
+
+	if err := entity.DB().Raw("SELECT Comic_id, AVG(rating_id) AS average_rate From reviews GROUP BY Comic_id ").Scan(&review).Error; err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"data": review})
+}	
+
 

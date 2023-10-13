@@ -18,24 +18,11 @@ func main(){
 	r.POST("/Reviews", controller.Createreview)
 	r.GET("/Reviews", controller.ListReviews)
 	r.GET("/Ratings", controller.ListRating)
+	r.GET("/Reviews", controller.CalculateAverageRatings)
 	r.Run()
 }
 
-// func main() {
-// 	entity.SetupDatabase()
-// 	r := gin.Default()
-// 	r.Use(CORSMiddleware())
-// 	// Review Routes
-// 	r.GET("/Createreview", controller.ListReviews)
-// 	r.GET("/Review/:id", controller.GetReview)
-// 	r.POST("/Review", controller.CreateUser)
-// // 	r.PATCH("/Review", controller.UpdateUser)
-// // 	r.DELETE("/Review/:id", controller.DeleteUser)
-	
-	
-// 	// Run the server
-// 	r.Run()
-// }
+
 
 func CORSMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {

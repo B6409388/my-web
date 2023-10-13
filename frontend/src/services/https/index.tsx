@@ -1,6 +1,11 @@
+import { Rating } from "@mui/material";
 import { ReviewInterface } from "../../interfaces/lReview"; 
 
 const apiUrl = "http://localhost:8080";
+
+const calculateReviewsAverage = () => {
+ 
+}
 
 async function GetReview() {
   const requestOptions = {
