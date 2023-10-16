@@ -18,7 +18,7 @@ func main(){
 	r.POST("/Reviews", controller.Createreview)
 	r.GET("/Reviews", controller.ListReviews)
 	r.GET("/Ratings", controller.ListRating)
-	r.GET("/Reviews", controller.CalculateAverageRatings)
+	// r.GET("/Reviews", controller.CalculateAverageRatings)
 	r.Run()
 }
 

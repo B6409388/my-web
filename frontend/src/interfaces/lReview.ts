@@ -4,8 +4,8 @@ export interface ReviewInterface {
   ID?: number;
   Comic_id?: number;
   Comment?: string;
-  RatingID?: number;
-  Rating?:  RatingInterface;
+  RatingID?: RatingInterface;
+
  
 
 }

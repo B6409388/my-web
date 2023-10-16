@@ -64,7 +64,7 @@ const columns: ColumnsType<DataType> = [
   },
 ];
 
-const data: DataType[] = [
+const data: DataType[] = [  //ตัวข้อมูลของตาราง
   {
     key: '1',
     name: 'John Brown',

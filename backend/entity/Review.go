@@ -11,6 +11,7 @@ type Review struct{
 	 
 	Comic_id int
 	Comment string
+	Namecommic string
 	
 	RatingID *uint
 	Rating Rating `gorm:"foreignKey:RatingID"`

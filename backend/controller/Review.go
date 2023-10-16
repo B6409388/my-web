@@ -31,6 +31,7 @@ func Createreview(c *gin.Context) {
 		Rating:   Rating,    // โยงความสัมพันธ์กับ Entity Rating
 		Comic_id:  review.Comic_id, // ตั้งค่าฟิลด์ Comic_id
 		Comment:  review.Comment,  // ตั้งค่าฟิลด์ Comment
+		Namecommic: review.Namecommic,  // ตั้งค่าฟิลด์ Namecomnic
 		
 		
 	}

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Myreveiw from "./pages/myreview/myreview";
 import {
   About,
   Home,
@@ -14,6 +15,7 @@ import {
   Payment,
   SingleProduct,
   Createreview,
+
  
 } from "./pages";
 
@@ -32,6 +34,7 @@ const App = () => {
         <Route path="/Register" element={<Register />} />
         <Route path="/Orders" element={<Orders />} />
         <Route path="/Createreview" element={<Createreview />} />
+        <Route path="/Myreview" element={<Myreveiw />} />
       </Routes>
     </Router>
   );
